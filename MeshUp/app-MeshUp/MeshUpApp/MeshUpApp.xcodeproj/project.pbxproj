@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350C13652017B9480093C216 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C13642017B9480093C216 /* Task.swift */; };
+		350C13672017BA060093C216 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350C13662017BA060093C216 /* TaskList.swift */; };
+		35437A602017925900AD5726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35437A5F2017925900AD5726 /* AppDelegate.swift */; };
+		35437A622017925900AD5726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35437A612017925900AD5726 /* ViewController.swift */; };
+		35437A672017925900AD5726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35437A662017925900AD5726 /* Assets.xcassets */; };
+		35437A6A2017925900AD5726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35437A682017925900AD5726 /* LaunchScreen.storyboard */; };
+		35437A76201792B600AD5726 /* NewsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35437A75201792B600AD5726 /* NewsAPIService.swift */; };
+		35437A78201792CD00AD5726 /* OpenStateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35437A77201792CD00AD5726 /* OpenStateAPIService.swift */; };
+		AB376DCC245B26BC5FBB1277 /* Pods_MeshUpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA0F4DB340DF392617EFC8 /* Pods_MeshUpApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08EA0F4DB340DF392617EFC8 /* Pods_MeshUpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshUpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		350C13632017A43C0093C216 /* MeshUpApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeshUpApp.entitlements; sourceTree = "<group>"; };
+		350C13642017B9480093C216 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		350C13662017BA060093C216 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		3539A16120179EF4004F6EDE /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		35437A5C2017925900AD5726 /* MeshUpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshUpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35437A5F2017925900AD5726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35437A612017925900AD5726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35437A662017925900AD5726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35437A692017925900AD5726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35437A6B2017925900AD5726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35437A75201792B600AD5726 /* NewsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPIService.swift; sourceTree = "<group>"; };
+		35437A77201792CD00AD5726 /* OpenStateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenStateAPIService.swift; sourceTree = "<group>"; };
+		9B18A30238B4295C46442CEB /* Pods-MeshUpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshUpApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeshUpApp/Pods-MeshUpApp.release.xcconfig"; sourceTree = "<group>"; };
+		BAFC95EE3911B6ECAB5485AF /* Pods-MeshUpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeshUpApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeshUpApp/Pods-MeshUpApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35437A592017925900AD5726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB376DCC245B26BC5FBB1277 /* Pods_MeshUpApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3539A16020179ECB004F6EDE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3539A16120179EF4004F6EDE /* RealmManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		35437A532017925900AD5726 = {
+			isa = PBXGroup;
+			children = (
+				35437A5E2017925900AD5726 /* MeshUpApp */,
+				35437A5D2017925900AD5726 /* Products */,
+				CA11FCDE25FCFE1B8631ED63 /* Pods */,
+				EFDA2141967CEECFB504825D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		35437A5D2017925900AD5726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35437A5C2017925900AD5726 /* MeshUpApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35437A5E2017925900AD5726 /* MeshUpApp */ = {
+			isa = PBXGroup;
+			children = (
+				350C13632017A43C0093C216 /* MeshUpApp.entitlements */,
+				3539A16020179ECB004F6EDE /* Core */,
+				35437A742017929500AD5726 /* View */,
+				35437A732017928E00AD5726 /* Service */,
+				35437A722017928500AD5726 /* Controller */,
+				35437A712017927D00AD5726 /* Model */,
+				35437A5F2017925900AD5726 /* AppDelegate.swift */,
+				35437A662017925900AD5726 /* Assets.xcassets */,
+				35437A682017925900AD5726 /* LaunchScreen.storyboard */,
+				35437A6B2017925900AD5726 /* Info.plist */,
+			);
+			path = MeshUpApp;
+			sourceTree = "<group>";
+		};
+		35437A712017927D00AD5726 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				350C13642017B9480093C216 /* Task.swift */,
+				350C13662017BA060093C216 /* TaskList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35437A722017928500AD5726 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				35437A612017925900AD5726 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35437A732017928E00AD5726 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				35437A75201792B600AD5726 /* NewsAPIService.swift */,
+				35437A77201792CD00AD5726 /* OpenStateAPIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		35437A742017929500AD5726 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA11FCDE25FCFE1B8631ED63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAFC95EE3911B6ECAB5485AF /* Pods-MeshUpApp.debug.xcconfig */,
+				9B18A30238B4295C46442CEB /* Pods-MeshUpApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFDA2141967CEECFB504825D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08EA0F4DB340DF392617EFC8 /* Pods_MeshUpApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35437A5B2017925900AD5726 /* MeshUpApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35437A6E2017925900AD5726 /* Build configuration list for PBXNativeTarget "MeshUpApp" */;
+			buildPhases = (
+				3245FDEC8B3BFD63B97399DC /* [CP] Check Pods Manifest.lock */,
+				35437A582017925900AD5726 /* Sources */,
+				35437A592017925900AD5726 /* Frameworks */,
+				35437A5A2017925900AD5726 /* Resources */,
+				828ADF4D25031304769E7CD9 /* [CP] Embed Pods Frameworks */,
+				7641E162036F4C7652F8543C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeshUpApp;
+			productName = MeshUpApp;
+			productReference = 35437A5C2017925900AD5726 /* MeshUpApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35437A542017925900AD5726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tom Marler";
+				TargetAttributes = {
+					35437A5B2017925900AD5726 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 35437A572017925900AD5726 /* Build configuration list for PBXProject "MeshUpApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35437A532017925900AD5726;
+			productRefGroup = 35437A5D2017925900AD5726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35437A5B2017925900AD5726 /* MeshUpApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35437A5A2017925900AD5726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35437A6A2017925900AD5726 /* LaunchScreen.storyboard in Resources */,
+				35437A672017925900AD5726 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3245FDEC8B3BFD63B97399DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeshUpApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7641E162036F4C7652F8543C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeshUpApp/Pods-MeshUpApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		828ADF4D25031304769E7CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MeshUpApp/Pods-MeshUpApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MeshUpApp/Pods-MeshUpApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35437A582017925900AD5726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350C13672017BA060093C216 /* TaskList.swift in Sources */,
+				35437A622017925900AD5726 /* ViewController.swift in Sources */,
+				35437A78201792CD00AD5726 /* OpenStateAPIService.swift in Sources */,
+				350C13652017B9480093C216 /* Task.swift in Sources */,
+				35437A602017925900AD5726 /* AppDelegate.swift in Sources */,
+				35437A76201792B600AD5726 /* NewsAPIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35437A682017925900AD5726 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35437A692017925900AD5726 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35437A6C2017925900AD5726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35437A6D2017925900AD5726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35437A6F2017925900AD5726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFC95EE3911B6ECAB5485AF /* Pods-MeshUpApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeshUpApp/MeshUpApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MHZJ6UH4L9;
+				INFOPLIST_FILE = MeshUpApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.QuarkWork.MeshUpApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35437A702017925900AD5726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B18A30238B4295C46442CEB /* Pods-MeshUpApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MeshUpApp/MeshUpApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MHZJ6UH4L9;
+				INFOPLIST_FILE = MeshUpApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.QuarkWork.MeshUpApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35437A572017925900AD5726 /* Build configuration list for PBXProject "MeshUpApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35437A6C2017925900AD5726 /* Debug */,
+				35437A6D2017925900AD5726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35437A6E2017925900AD5726 /* Build configuration list for PBXNativeTarget "MeshUpApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35437A6F2017925900AD5726 /* Debug */,
+				35437A702017925900AD5726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35437A542017925900AD5726 /* Project object */;
+}

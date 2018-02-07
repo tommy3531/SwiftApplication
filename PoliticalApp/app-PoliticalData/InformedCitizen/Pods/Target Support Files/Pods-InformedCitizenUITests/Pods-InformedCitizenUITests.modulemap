@@ -1,0 +1,6 @@
+framework module Pods_InformedCitizenUITests {
+  umbrella header "Pods-InformedCitizenUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
