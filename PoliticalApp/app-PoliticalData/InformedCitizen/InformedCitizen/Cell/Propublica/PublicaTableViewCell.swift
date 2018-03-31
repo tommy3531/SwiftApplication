@@ -10,19 +10,22 @@ import UIKit
 
 class PublicaTableViewCell: UITableViewCell {
     
+    // Basic Information
     var firstNameLabel: UILabel!
     var lastNameLabel: UILabel!
+    var stateLabel: UILabel!
+
     
     // ************** ReadUp on why this works ************************************
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-        configureCell()
+        basicInformation()
     }
     
     // ************** ReadUp on why this works ************************************
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        configureCell()
+        basicInformation()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -31,27 +34,40 @@ class PublicaTableViewCell: UITableViewCell {
         self.firstNameLabel?.font = self.firstNameLabel?.font.withSize(fontSize)
     }
     
-    func configureCell() {
+    
+    
+    func configureProfilePicture() {
         
-        let frame = CGRect(x: 0, y: 0, width: 200, height: 25)
+    }
+    
+    func basicInformation() {
+        let basicInformationView = UIView()
+        let frame = CGRect(x: 0, y: 0, width: 400, height: 25)
         firstNameLabel = UILabel(frame: frame)
         lastNameLabel = UILabel(frame: frame)
-        
+        stateLabel = UILabel(frame: frame)
+        basicInformationView.addSubview(firstNameLabel)
+        basicInformationView.addSubview(lastNameLabel)
+        basicInformationView.addSubview(stateLabel)
         // Each cell has a contentView Property
-        contentView.addSubview(firstNameLabel)
-        contentView.addSubview(lastNameLabel)
+        self.contentView.addSubview(basicInformationView)
         
         // firstName
-        firstNameLabel.textColor = UIColor.white
+        firstNameLabel.textColor = UIColor.black
         firstNameLabel.textAlignment = .left
         firstNameLabel.font = UIFont(name: firstNameLabel.font.fontName, size: 12)
-
+        
         // lastname
-        lastNameLabel.textColor = UIColor.white
-        lastNameLabel.textAlignment = .right
+        lastNameLabel.textColor = UIColor.black
+        lastNameLabel.textAlignment = .center
         lastNameLabel.font = UIFont(name: lastNameLabel.font.fontName, size: 12)
         
+        stateLabel.textColor = UIColor.black
+        stateLabel.textAlignment = .right
+        stateLabel.font = UIFont(name: lastNameLabel.font.fontName, size: 12)
+        
         // Cell background cover
-        self.contentView.backgroundColor = .red
+        //self.contentView.backgroundColor = .white
     }
+
 }

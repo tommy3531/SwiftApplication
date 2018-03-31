@@ -9,34 +9,50 @@ import RealmSwift
 
 class PropublicaViewController: UIViewController {
     
+    // Propublica Model
+    var propublicaModel: PropublicaModel = PropublicaModel()
+
+    
+    // Views
+    var propublicaDetailPanel: PropublicaDetailPanel = PropublicaDetailPanel()
+    var propublicaSocialPanel: PropublicaSocialPanel = PropublicaSocialPanel()
+    var propublicaBasicInformation: PropublicaBasicInformation = PropublicaBasicInformation()
+    
+    // PropublicaClient
+    var propublicaClient: PropublicaClient = PropublicaClient()
+    
+    // PropublicaManager - Managers Propublica Operations, makes rest call
+    var propublicaManager: PropublicaManager = PropublicaManager()
+    
+    // RealmManager - Managers all Realm Operations
+    var realmManager: RealmManager = RealmManager()
+    
+    // Computed property - tell realm to retrieve a PropublicaModel
     var legislators: Results<PropublicaModel>! {
         get {
-            
+
             let realm = try! Realm()
             return realm.objects(PropublicaModel.self)
         }
     }
 
+    // Should have a tableView loaded
     var tableView: UITableView!
-    
-    // Notifier viewController that the view will be added to view heriarchey
-    override func viewWillAppear(_ animated: Bool) {
-        <#code#>
-    }
 
     override func viewDidLoad() {
-
+        
         super.viewDidLoad()
-        let frame = CGRect(x: 0, y: 0, width: 420, height: 400)
+        //print(legislators)
+        let frame = CGRect(x: 0, y: 0, width: 420, height: 1000)
         tableView = UITableView(frame: frame)
         tableView.dataSource = self
         tableView.delegate = self
         
         // Automatically size row
         tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        // Register PublicaTableViewCell with TableView
+        // Register our cell with the tableView and Add it the view as a subview
         tableView.register(PublicaTableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         
@@ -53,16 +69,33 @@ extension PropublicaViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        // Ask TableView for a reusable cell and cast as a PublicaTableViewCell
+        // Cast a cell as a PublicaTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PublicaTableViewCell
         cell.selectionStyle = .none
         let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.red
+        
+        // Set the backgroundView
         cell.selectedBackgroundView = backgroundView
-        let legislatorModel = legislators[indexPath.row]
-        cell.firstNameLabel.text = legislatorModel.firstName
-        cell.lastNameLabel.text = legislatorModel.lastName
+        
+        // If a cell is clicked get the legislators Info
+        let legislatorProperty = legislators[indexPath.row]
+        
+        // Write data to the buttons
+        cell.firstNameLabel.text = legislatorProperty.firstName
+        cell.lastNameLabel.text = legislatorProperty.lastName
+        cell.stateLabel.text = legislatorProperty.state
         return cell
+    }
+    
+    // If a cell is selected send the data to the detailsViewController
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Return a custom cell
+//        let cell = tableView.cellForRow(at: indexPath) as! PublicaTableDetailCell
+        
+        let propublicaDetail = PropublicaDetailViewController()
+        propublicaDetail.propublicaModel = legislators[indexPath.row]
+        present(propublicaDetail, animated: true)
     }
 }
 
@@ -70,15 +103,4 @@ extension PropublicaViewController: UITableViewDelegate {
     
 }
 
-
-    
-
-    
-//    func do_table_refresh()
-//    {
-//        DispatchQueue.async(group: dispatch_get_main_queue(), execute: {
-//            self.tableView.reloadData()
-//            return
-//        })
-//    }
 

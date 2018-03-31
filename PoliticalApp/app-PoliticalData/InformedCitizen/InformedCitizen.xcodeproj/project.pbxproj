@@ -41,6 +41,9 @@
 		35A3FA8C2029085B0058A72C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA8B2029085B0058A72C /* Person.swift */; };
 		35A3FA8D2029085B0058A72C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA8B2029085B0058A72C /* Person.swift */; };
 		35A3FA8E2029085B0058A72C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA8B2029085B0058A72C /* Person.swift */; };
+		35AAF617206338F600F84925 /* PropublicaDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF616206338F600F84925 /* PropublicaDetailPanel.swift */; };
+		35AAF61920633A2200F84925 /* PropublicaSocialPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61820633A2200F84925 /* PropublicaSocialPanel.swift */; };
+		35AAF61B20633E8D00F84925 /* PropublicaBasicInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61A20633E8D00F84925 /* PropublicaBasicInformation.swift */; };
 		35AD053C202BB4060080B6D9 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD053B202BB4060080B6D9 /* CustomLabel.swift */; };
 		35AD053D202BB4060080B6D9 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD053B202BB4060080B6D9 /* CustomLabel.swift */; };
 		35AD053E202BB4060080B6D9 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AD053B202BB4060080B6D9 /* CustomLabel.swift */; };
@@ -52,6 +55,7 @@
 		35CFB75C202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
 		35CFB75D202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
 		35CFB75E202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
+		35E0F75F2058C3CF000818DB /* PropublicaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */; };
 		35F0F766202A5C2A00298E1A /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35F0F765202A5C2A00298E1A /* Notes.txt */; };
 		35FC1BD320210B09009BBD04 /* PropublicaFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1BD220210B09009BBD04 /* PropublicaFileParser.swift */; };
 		35FC1BD420210B09009BBD04 /* PropublicaFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1BD220210B09009BBD04 /* PropublicaFileParser.swift */; };
@@ -118,11 +122,15 @@
 		35A3FA7C2028F74E0058A72C /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		35A3FA7F202907BD0058A72C /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealmManager.swift; path = InformedCitizen/Service/Realm/RealmManager.swift; sourceTree = SOURCE_ROOT; };
 		35A3FA8B2029085B0058A72C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		35AAF616206338F600F84925 /* PropublicaDetailPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaDetailPanel.swift; sourceTree = "<group>"; };
+		35AAF61820633A2200F84925 /* PropublicaSocialPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaSocialPanel.swift; sourceTree = "<group>"; };
+		35AAF61A20633E8D00F84925 /* PropublicaBasicInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaBasicInformation.swift; sourceTree = "<group>"; };
 		35AD053B202BB4060080B6D9 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		35CFB74D2020EFE500788348 /* PropublicaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaModel.swift; sourceTree = "<group>"; };
 		35CFB74F2020F14600788348 /* PropublicaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaClient.swift; sourceTree = "<group>"; };
 		35CFB7512020F52600788348 /* PropublicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaViewController.swift; sourceTree = "<group>"; };
 		35CFB75B202109D600788348 /* membersByState.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = membersByState.json; path = InformedCitizen/Client/Propublic/membersByState.json; sourceTree = SOURCE_ROOT; };
+		35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaDetailViewController.swift; sourceTree = "<group>"; };
 		35F0F765202A5C2A00298E1A /* Notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes.txt; sourceTree = "<group>"; };
 		35FC1BD220210B09009BBD04 /* PropublicaFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaFileParser.swift; sourceTree = "<group>"; };
 		35FC1BD9202128D8009BBD04 /* NewsFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFileParser.swift; sourceTree = "<group>"; };
@@ -273,6 +281,7 @@
 			children = (
 				35CFB7512020F52600788348 /* PropublicaViewController.swift */,
 				35FC1BEE20212963009BBD04 /* NewsViewController.swift */,
+				35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,6 +370,9 @@
 			isa = PBXGroup;
 			children = (
 				35AD053B202BB4060080B6D9 /* CustomLabel.swift */,
+				35AAF616206338F600F84925 /* PropublicaDetailPanel.swift */,
+				35AAF61820633A2200F84925 /* PropublicaSocialPanel.swift */,
+				35AAF61A20633E8D00F84925 /* PropublicaBasicInformation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -757,12 +769,16 @@
 			files = (
 				35CFB7522020F52600788348 /* PropublicaViewController.swift in Sources */,
 				35CFB74E2020EFE500788348 /* PropublicaModel.swift in Sources */,
+				35E0F75F2058C3CF000818DB /* PropublicaDetailViewController.swift in Sources */,
 				3598907D2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */,
 				358B14422020D12A000DFAA3 /* AppDelegate.swift in Sources */,
 				359890812023C19C00527916 /* PropublicaMembersLeavingOfficeModel.swift in Sources */,
 				35A3FA80202907BD0058A72C /* RealmManager.swift in Sources */,
+				35AAF61920633A2200F84925 /* PropublicaSocialPanel.swift in Sources */,
 				35A3FA7D2028F74E0058A72C /* RealmService.swift in Sources */,
+				35AAF617206338F600F84925 /* PropublicaDetailPanel.swift in Sources */,
 				359890852023C36400527916 /* PropublicaMemberVotePosition.swift in Sources */,
+				35AAF61B20633E8D00F84925 /* PropublicaBasicInformation.swift in Sources */,
 				357499422022824D00D10EDE /* NewsManager.swift in Sources */,
 				35A3FA8C2029085B0058A72C /* Person.swift in Sources */,
 				358B14792020DA92000DFAA3 /* PropublicaServiceAPI.swift in Sources */,
