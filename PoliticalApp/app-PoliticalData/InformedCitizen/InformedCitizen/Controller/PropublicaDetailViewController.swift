@@ -15,12 +15,6 @@ class PropublicaDetailViewController: UIViewController {
     var propublicaSocialPanel: PropublicaSocialPanel!
     var propublicaBasicInformation: PropublicaBasicInformation!
     
-    var propublica: PropublicaModel? {
-        didSet{
-            print(propublica?.firstName)
-        }
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -36,12 +30,11 @@ class PropublicaDetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
+    /// TODO: Need to Clean this up
     override func viewDidLoad() {
         super.viewDidLoad()
         let mainView = self.view!
-        
-        print(propublica)
-        
+        print(propublicaModel.firstName)
         
     }
 

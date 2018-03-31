@@ -68,7 +68,6 @@ extension PropublicaViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         // Cast a cell as a PublicaTableViewCell
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PublicaTableViewCell
         cell.selectionStyle = .none
@@ -90,11 +89,11 @@ extension PropublicaViewController: UITableViewDataSource {
     // If a cell is selected send the data to the detailsViewController
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        // Return a custom cell
-//        let cell = tableView.cellForRow(at: indexPath) as! PublicaTableDetailCell
-        
+        // Return a cell
+        //let cell = tableView.cellForRow(at: indexPath)
         let propublicaDetail = PropublicaDetailViewController()
         propublicaDetail.propublicaModel = legislators[indexPath.row]
+        
         present(propublicaDetail, animated: true)
     }
 }
