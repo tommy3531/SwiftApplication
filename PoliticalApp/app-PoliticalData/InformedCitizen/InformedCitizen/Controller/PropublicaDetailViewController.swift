@@ -11,19 +11,9 @@ import UIKit
 class PropublicaDetailViewController: UIViewController {
     
     var propublicaModel: PropublicaModel!
-    var propublicaDetailPanel: PropublicaDetailPanel!
-    var propublicaSocialPanel: PropublicaSocialPanel!
-    var propublicaBasicInformation: PropublicaBasicInformation!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    init(basicInformation: PropublicaBasicInformation, social: PropublicaSocialPanel, detailPanel: PropublicaDetailPanel) {
-        self.propublicaDetailPanel = detailPanel
-        self.propublicaSocialPanel = social
-        self.propublicaBasicInformation = basicInformation
-        super.init(nibName: nil, bundle: nil)
     }
     
     init() {

@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InformedCitizen/Controller/PropublicaDetailViewController.swift"
-            timestampString = "544175491.328114"
+            timestampString = "544175753.84755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "PropublicaDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InformedCitizen/Controller/PropublicaViewController.swift"
-            timestampString = "544175491.328553"
+            timestampString = "544175753.84791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
