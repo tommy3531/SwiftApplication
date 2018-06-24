@@ -9,24 +9,10 @@ import RealmSwift
 
 class PropublicaViewController: UIViewController {
     
-    // Propublica Model
-    var propublicaModel: PropublicaModel = PropublicaModel()
-
-    
-    // Views
-    var propublicaDetailPanel: PropublicaDetailPanel = PropublicaDetailPanel()
-    var propublicaSocialPanel: PropublicaSocialPanel = PropublicaSocialPanel()
-    var propublicaBasicInformation: PropublicaBasicInformation = PropublicaBasicInformation()
-    
-    // PropublicaClient
-    var propublicaClient: PropublicaClient = PropublicaClient()
-    
-    // PropublicaManager - Managers Propublica Operations, makes rest call
-    var propublicaManager: PropublicaManager = PropublicaManager()
     
     // RealmManager - Managers all Realm Operations
     var realmManager: RealmManager = RealmManager()
-    
+
     // Computed property - tell realm to retrieve a PropublicaModel
     var legislators: Results<PropublicaModel>! {
         get {
@@ -35,6 +21,7 @@ class PropublicaViewController: UIViewController {
             return realm.objects(PropublicaModel.self)
         }
     }
+    
 
     // Should have a tableView loaded
     var tableView: UITableView!
@@ -42,7 +29,9 @@ class PropublicaViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        //print(legislators)
+        
+        // Load all the senators
+        realmManager.loadAllSenator()
         let frame = CGRect(x: 0, y: 0, width: 420, height: 1000)
         tableView = UITableView(frame: frame)
         tableView.dataSource = self
@@ -63,7 +52,7 @@ class PropublicaViewController: UIViewController {
 extension PropublicaViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return legislators.count
+        return(legislators.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

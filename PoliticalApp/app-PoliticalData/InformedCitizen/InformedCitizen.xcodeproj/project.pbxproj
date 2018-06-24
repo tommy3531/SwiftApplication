@@ -21,9 +21,9 @@
 		358B147D2020DAAA000DFAA3 /* NewsServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B147C2020DAAA000DFAA3 /* NewsServiceAPI.swift */; };
 		358B147E2020DAAA000DFAA3 /* NewsServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B147C2020DAAA000DFAA3 /* NewsServiceAPI.swift */; };
 		358B147F2020DAAA000DFAA3 /* NewsServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358B147C2020DAAA000DFAA3 /* NewsServiceAPI.swift */; };
-		359890792023BC0500527916 /* PropublicaNewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaNewMember.swift */; };
-		3598907A2023BC0500527916 /* PropublicaNewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaNewMember.swift */; };
-		3598907B2023BC0500527916 /* PropublicaNewMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaNewMember.swift */; };
+		359890792023BC0500527916 /* PropublicaSpecificMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaSpecificMember.swift */; };
+		3598907A2023BC0500527916 /* PropublicaSpecificMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaSpecificMember.swift */; };
+		3598907B2023BC0500527916 /* PropublicaSpecificMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359890782023BC0500527916 /* PropublicaSpecificMember.swift */; };
 		3598907D2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598907C2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift */; };
 		3598907E2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598907C2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift */; };
 		3598907F2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3598907C2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift */; };
@@ -55,6 +55,26 @@
 		35CFB75C202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
 		35CFB75D202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
 		35CFB75E202109D600788348 /* membersByState.json in Resources */ = {isa = PBXBuildFile; fileRef = 35CFB75B202109D600788348 /* membersByState.json */; };
+		35DD76C620DEF5DA00BCF8DE /* PropublicaDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF616206338F600F84925 /* PropublicaDetailPanel.swift */; };
+		35DD76C720DEF5DB00BCF8DE /* PropublicaDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF616206338F600F84925 /* PropublicaDetailPanel.swift */; };
+		35DD76C820DEF5DE00BCF8DE /* PropublicaSocialPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61820633A2200F84925 /* PropublicaSocialPanel.swift */; };
+		35DD76C920DEF5DE00BCF8DE /* PropublicaSocialPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61820633A2200F84925 /* PropublicaSocialPanel.swift */; };
+		35DD76CA20DEF5E100BCF8DE /* PropublicaBasicInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61A20633E8D00F84925 /* PropublicaBasicInformation.swift */; };
+		35DD76CB20DEF5E200BCF8DE /* PropublicaBasicInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAF61A20633E8D00F84925 /* PropublicaBasicInformation.swift */; };
+		35DD76CC20DEF5E800BCF8DE /* PublicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA792028F6650058A72C /* PublicaTableViewCell.swift */; };
+		35DD76CD20DEF5E900BCF8DE /* PublicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA792028F6650058A72C /* PublicaTableViewCell.swift */; };
+		35DD76CE20DEF5F100BCF8DE /* PropublicaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574993E2022824D00D10EDE /* PropublicaManager.swift */; };
+		35DD76CF20DEF5F200BCF8DE /* PropublicaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3574993E2022824D00D10EDE /* PropublicaManager.swift */; };
+		35DD76D020DEF5F600BCF8DE /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357499402022824D00D10EDE /* NewsManager.swift */; };
+		35DD76D120DEF5F600BCF8DE /* NewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357499402022824D00D10EDE /* NewsManager.swift */; };
+		35DD76D220DEF60300BCF8DE /* PropublicaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB74F2020F14600788348 /* PropublicaClient.swift */; };
+		35DD76D320DEF60400BCF8DE /* PropublicaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB74F2020F14600788348 /* PropublicaClient.swift */; };
+		35DD76D420DEF60900BCF8DE /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA7C2028F74E0058A72C /* RealmService.swift */; };
+		35DD76D520DEF60A00BCF8DE /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A3FA7C2028F74E0058A72C /* RealmService.swift */; };
+		35DD76D620DEF61900BCF8DE /* PropublicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB74D2020EFE500788348 /* PropublicaModel.swift */; };
+		35DD76D720DEF61A00BCF8DE /* PropublicaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CFB74D2020EFE500788348 /* PropublicaModel.swift */; };
+		35DD76D820DEF62A00BCF8DE /* PropublicaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */; };
+		35DD76D920DEF62A00BCF8DE /* PropublicaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */; };
 		35E0F75F2058C3CF000818DB /* PropublicaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E0F75E2058C3CF000818DB /* PropublicaDetailViewController.swift */; };
 		35F0F766202A5C2A00298E1A /* Notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35F0F765202A5C2A00298E1A /* Notes.txt */; };
 		35FC1BD320210B09009BBD04 /* PropublicaFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FC1BD220210B09009BBD04 /* PropublicaFileParser.swift */; };
@@ -113,7 +133,7 @@
 		358B14662020D12A000DFAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358B14782020DA92000DFAA3 /* PropublicaServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaServiceAPI.swift; sourceTree = "<group>"; };
 		358B147C2020DAAA000DFAA3 /* NewsServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServiceAPI.swift; sourceTree = "<group>"; };
-		359890782023BC0500527916 /* PropublicaNewMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaNewMember.swift; sourceTree = "<group>"; };
+		359890782023BC0500527916 /* PropublicaSpecificMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaSpecificMember.swift; sourceTree = "<group>"; };
 		3598907C2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaCurrentByStateMemberModel.swift; sourceTree = "<group>"; };
 		359890802023C19C00527916 /* PropublicaMembersLeavingOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaMembersLeavingOfficeModel.swift; sourceTree = "<group>"; };
 		359890842023C36400527916 /* PropublicaMemberVotePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropublicaMemberVotePosition.swift; sourceTree = "<group>"; };
@@ -310,7 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				35CFB74D2020EFE500788348 /* PropublicaModel.swift */,
-				359890782023BC0500527916 /* PropublicaNewMember.swift */,
+				359890782023BC0500527916 /* PropublicaSpecificMember.swift */,
 				3598907C2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift */,
 				359890802023C19C00527916 /* PropublicaMembersLeavingOfficeModel.swift */,
 				359890842023C36400527916 /* PropublicaMemberVotePosition.swift */,
@@ -347,8 +367,9 @@
 			children = (
 				35A3FA7F202907BD0058A72C /* RealmManager.swift */,
 			);
-			path = Realm;
-			sourceTree = SOURCE_ROOT;
+			name = Realm;
+			path = ../../Realm;
+			sourceTree = "<group>";
 		};
 		35A3FA89202908460058A72C /* News */ = {
 			isa = PBXGroup;
@@ -466,7 +487,6 @@
 				358B143B2020D12A000DFAA3 /* Frameworks */,
 				358B143C2020D12A000DFAA3 /* Resources */,
 				2E7ECA866EF80A51AF6183A9 /* [CP] Embed Pods Frameworks */,
-				25BC8A82E6357A46ECCFF10A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -485,8 +505,6 @@
 				358B14512020D12A000DFAA3 /* Sources */,
 				358B14522020D12A000DFAA3 /* Frameworks */,
 				358B14532020D12A000DFAA3 /* Resources */,
-				84E05EA14DA4031BFBAD89BA /* [CP] Embed Pods Frameworks */,
-				0D1291B91505FC1824E33144 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -506,8 +524,6 @@
 				358B145C2020D12A000DFAA3 /* Sources */,
 				358B145D2020D12A000DFAA3 /* Frameworks */,
 				358B145E2020D12A000DFAA3 /* Resources */,
-				B4A4F2D3FD2E69074B3BD1C2 /* [CP] Embed Pods Frameworks */,
-				2AA0ABB20D5277F692B41988 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -526,7 +542,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Tom Marler";
 				TargetAttributes = {
 					358B143D2020D12A000DFAA3 = {
@@ -601,51 +617,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D1291B91505FC1824E33144 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizenTests/Pods-InformedCitizenTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		25BC8A82E6357A46ECCFF10A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizen/Pods-InformedCitizen-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2AA0ABB20D5277F692B41988 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizenUITests/Pods-InformedCitizenUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2E7ECA866EF80A51AF6183A9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,21 +647,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizen/Pods-InformedCitizen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84E05EA14DA4031BFBAD89BA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizenTests/Pods-InformedCitizenTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		86E681201CA2E2A830328182 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -707,21 +663,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4A4F2D3FD2E69074B3BD1C2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InformedCitizenUITests/Pods-InformedCitizenUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3AF6221CC7CBD555467C693 /* [CP] Check Pods Manifest.lock */ = {
@@ -782,7 +723,7 @@
 				357499422022824D00D10EDE /* NewsManager.swift in Sources */,
 				35A3FA8C2029085B0058A72C /* Person.swift in Sources */,
 				358B14792020DA92000DFAA3 /* PropublicaServiceAPI.swift in Sources */,
-				359890792023BC0500527916 /* PropublicaNewMember.swift in Sources */,
+				359890792023BC0500527916 /* PropublicaSpecificMember.swift in Sources */,
 				35CFB7502020F14600788348 /* PropublicaClient.swift in Sources */,
 				358B144A2020D12A000DFAA3 /* InformedCitizen.xcdatamodeld in Sources */,
 				35A3FA7A2028F6650058A72C /* PublicaTableViewCell.swift in Sources */,
@@ -801,17 +742,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DD76D620DEF61900BCF8DE /* PropublicaModel.swift in Sources */,
+				35DD76CC20DEF5E800BCF8DE /* PublicaTableViewCell.swift in Sources */,
+				35DD76CE20DEF5F100BCF8DE /* PropublicaManager.swift in Sources */,
+				35DD76D020DEF5F600BCF8DE /* NewsManager.swift in Sources */,
+				35DD76D220DEF60300BCF8DE /* PropublicaClient.swift in Sources */,
+				35DD76CA20DEF5E100BCF8DE /* PropublicaBasicInformation.swift in Sources */,
 				35FC1BD420210B09009BBD04 /* PropublicaFileParser.swift in Sources */,
 				358B145A2020D12A000DFAA3 /* InformedCitizenTests.swift in Sources */,
+				35DD76D420DEF60900BCF8DE /* RealmService.swift in Sources */,
 				35CFB7532020F52600788348 /* PropublicaViewController.swift in Sources */,
 				359890822023C19C00527916 /* PropublicaMembersLeavingOfficeModel.swift in Sources */,
 				35FC1BF020212963009BBD04 /* NewsViewController.swift in Sources */,
 				35A3FA81202907BD0058A72C /* RealmManager.swift in Sources */,
 				3598907E2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */,
 				35AD053D202BB4060080B6D9 /* CustomLabel.swift in Sources */,
+				35DD76C820DEF5DE00BCF8DE /* PropublicaSocialPanel.swift in Sources */,
 				35FC1BEC2021294F009BBD04 /* NewsModel.swift in Sources */,
-				3598907A2023BC0500527916 /* PropublicaNewMember.swift in Sources */,
+				3598907A2023BC0500527916 /* PropublicaSpecificMember.swift in Sources */,
 				35FC1BDB202128D8009BBD04 /* NewsFileParser.swift in Sources */,
+				35DD76C620DEF5DA00BCF8DE /* PropublicaDetailPanel.swift in Sources */,
+				35DD76D820DEF62A00BCF8DE /* PropublicaDetailViewController.swift in Sources */,
 				359890862023C36400527916 /* PropublicaMemberVotePosition.swift in Sources */,
 				358B147A2020DA92000DFAA3 /* PropublicaServiceAPI.swift in Sources */,
 				35FC1BE620212923009BBD04 /* NewsClient.swift in Sources */,
@@ -824,17 +775,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35DD76D720DEF61A00BCF8DE /* PropublicaModel.swift in Sources */,
+				35DD76CD20DEF5E900BCF8DE /* PublicaTableViewCell.swift in Sources */,
+				35DD76CF20DEF5F200BCF8DE /* PropublicaManager.swift in Sources */,
+				35DD76D120DEF5F600BCF8DE /* NewsManager.swift in Sources */,
+				35DD76D320DEF60400BCF8DE /* PropublicaClient.swift in Sources */,
+				35DD76CB20DEF5E200BCF8DE /* PropublicaBasicInformation.swift in Sources */,
 				35FC1BD520210B09009BBD04 /* PropublicaFileParser.swift in Sources */,
 				358B14652020D12A000DFAA3 /* InformedCitizenUITests.swift in Sources */,
+				35DD76D520DEF60A00BCF8DE /* RealmService.swift in Sources */,
 				35CFB7542020F52600788348 /* PropublicaViewController.swift in Sources */,
 				359890832023C19C00527916 /* PropublicaMembersLeavingOfficeModel.swift in Sources */,
 				35FC1BF120212963009BBD04 /* NewsViewController.swift in Sources */,
 				35A3FA82202907BD0058A72C /* RealmManager.swift in Sources */,
 				3598907F2023BF2A00527916 /* PropublicaCurrentByStateMemberModel.swift in Sources */,
 				35AD053E202BB4060080B6D9 /* CustomLabel.swift in Sources */,
+				35DD76C920DEF5DE00BCF8DE /* PropublicaSocialPanel.swift in Sources */,
 				35FC1BED2021294F009BBD04 /* NewsModel.swift in Sources */,
-				3598907B2023BC0500527916 /* PropublicaNewMember.swift in Sources */,
+				3598907B2023BC0500527916 /* PropublicaSpecificMember.swift in Sources */,
 				35FC1BDC202128D8009BBD04 /* NewsFileParser.swift in Sources */,
+				35DD76C720DEF5DB00BCF8DE /* PropublicaDetailPanel.swift in Sources */,
+				35DD76D920DEF62A00BCF8DE /* PropublicaDetailViewController.swift in Sources */,
 				359890872023C36400527916 /* PropublicaMemberVotePosition.swift in Sources */,
 				358B147B2020DA92000DFAA3 /* PropublicaServiceAPI.swift in Sources */,
 				35FC1BE720212923009BBD04 /* NewsClient.swift in Sources */,
@@ -884,6 +845,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -891,6 +853,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -941,6 +904,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -948,6 +912,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

@@ -14,6 +14,8 @@
 // Chamber: house or senate
 // Two digit state
 
+// Stub out API request PropublicaServiceAPI
+
 import Foundation
 import SwiftyJSON
 
@@ -23,9 +25,17 @@ struct PropublicaClient {
     
     // Request the current senate members from the Propublica Service
     // TODO: I dont like how I am passing congress and chamber 
-    func requestCurrentSenateMembers(congress: String, chamber: String, completed: @escaping (JSON?) -> ()) {
+    func fetchCurrentSenateMembers(congress: String, chamber: String, completed: @escaping (JSON?) -> ()) {
         propublicaServiceAPI.getCurrentMembersOfSenate(congress: congress, chamber: chamber) { (jsonFromClient) in
             completed(jsonFromClient)
         }
     }
+    
+    func fetchSpecificMember(memberId: String, completed: @escaping (JSON?) -> ()) {
+        propublicaServiceAPI.getSpecificMember(memberID: memberId) { (jsonFromClient) in
+            completed(jsonFromClient)
+        }
+    }
+    
+    
 }

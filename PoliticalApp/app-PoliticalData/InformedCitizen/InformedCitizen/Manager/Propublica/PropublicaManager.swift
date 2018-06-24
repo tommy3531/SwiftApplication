@@ -11,19 +11,30 @@ import RealmSwift
 
 struct PropublicaManager {
     
-    var propublicclient: PropublicaClient = PropublicaClient()
+    var propublicClient: PropublicaClient = PropublicaClient()
     var propublicfileparser: PropublicaFileParser = PropublicaFileParser()
     var legislator = List<PropublicaModel>()
+    
+    // Completed return [PropublicaModel]
+    func getSpecificCongressAndChamber(congress: String, chamber: String, completed: @escaping ([PropublicaModel]) -> ()) {
         
-    func getJsonFromClientTest(congress: String, chamber: String, completed: @escaping ([PropublicaModel]) -> ()) {
-        
-        // Call the propublicclient
-        propublicclient.requestCurrentSenateMembers(congress: congress, chamber: chamber) { (senateJSONObject) in
+        // async return full jsonObject
+        propublicClient.fetchCurrentSenateMembers(congress: congress, chamber: chamber) { (senateJSONObject) in
             
-            // Parse the JSON into Propublica Model Object
-            self.propublicfileparser.parseJSONFromClient(json: senateJSONObject!, completed: { (propublicaModel) in
-                completed(propublicaModel)
+            //take json and parse
+            self.propublicfileparser.parseSenate(json: senateJSONObject!, completed: { (propublicaArray) in
+                completed(propublicaArray)
             })
         }
     }
+    
+    func getSpecificMember(memberId: String, completed: @escaping ([PropublicaSpecificMember]) -> ()) {
+        
+        propublicClient.fetchSpecificMember(memberId: memberId) { (specificJSONObject) in
+            self.propublicfileparser.parseSpecificMember(json: specificJSONObject!, completed: {(specificArray) in
+                completed(specificArray)
+            })
+        }
+    }
+    // call PropublicaClient function
 }

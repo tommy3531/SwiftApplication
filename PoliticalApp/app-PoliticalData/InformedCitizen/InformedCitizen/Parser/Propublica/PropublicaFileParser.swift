@@ -15,7 +15,7 @@ class PropublicaFileParser {
     var legislator = List<PropublicaModel>()
     var propublicaArray = [PropublicaModel]()
     
-    func parseJSONFromClient(json: JSON, completed: @escaping ([PropublicaModel]) -> ()) {
+    func parseSenate(json: JSON, completed: @escaping ([PropublicaModel]) -> ()) {
 
         
         if json["status"].stringValue == "OK" {
@@ -85,4 +85,9 @@ class PropublicaFileParser {
             
         }
     }
+    
+    func parseSpecificMember(json: JSON, completed: @escaping ([PropublicaSpecificMember]) -> ()) {
+        print(json)
+    }
+
 }

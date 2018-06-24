@@ -23,8 +23,10 @@ class PropublicaDetailViewController: UIViewController {
     /// TODO: Need to Clean this up
     override func viewDidLoad() {
         super.viewDidLoad()
+        var realmManager: RealmManager = RealmManager()
+        realmManager.loadSpecificMember()
         let mainView = self.view!
-        print(propublicaModel.firstName)
+        print("PropublicaDetail \(propublicaModel.firstName)")
         
     }
 
