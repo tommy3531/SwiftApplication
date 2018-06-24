@@ -24,6 +24,18 @@ class RealmService {
         })
     }
     
+    func saveSpecificObjects(specificMemberModel: PropublicaSpecificMember) {
+        try! realm.write({
+            
+            for i in specificMemberModel.results {
+                realm.add(i, update: true)
+            }
+            // If update = true, objects that are already in the Realm will be
+            // updated instead of added a new.
+            realm.add(specificMemberModel, update: true)
+        })
+    }
+    
     func getObjects(type: Object.Type) -> Results<Object>? {
         return realm.objects(type)
     }

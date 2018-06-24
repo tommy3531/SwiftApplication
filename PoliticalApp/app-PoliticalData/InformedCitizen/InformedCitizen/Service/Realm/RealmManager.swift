@@ -33,7 +33,15 @@ struct RealmManager {
     func loadSpecificMember() {
         propublicamanager.getSpecificMember(memberId: memberId) { (propublicaSpecificMember) in
             print("Realm Manager")
-            print(propublicaSpecificMember)
+            for specificMemberItem in propublicaSpecificMember {
+                RealmService.shared.saveSpecificObjects(specificMemberModel: specificMemberItem)
+                print(specificMemberItem.results)
+                for i in specificMemberItem.results {
+                    print(i)
+                }
+
+            }
+//            print(propublicaSpecificMember)
         }
     }
     
