@@ -28,10 +28,14 @@ struct PropublicaManager {
         }
     }
     
+    // Get array of SpecificMember
     func getSpecificMember(memberId: String, completed: @escaping ([PropublicaSpecificMember]) -> ()) {
         
+        // Fetch member by MemberId and jsonObject
         propublicClient.fetchSpecificMember(memberId: memberId) { (specificJSONObject) in
-            self.propublicfileparser.parseSpecificMember(json: specificJSONObject!, completed: {(specificArray) in
+            
+            // Parse jsonObject return array
+            self.propublicfileparser.parseSpecificMember(data: specificJSONObject!, completed: {(specificArray) in
                 completed(specificArray)
             })
         }

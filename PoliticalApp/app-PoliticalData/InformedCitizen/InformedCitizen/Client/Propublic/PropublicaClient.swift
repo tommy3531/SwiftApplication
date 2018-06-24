@@ -31,7 +31,7 @@ struct PropublicaClient {
         }
     }
     
-    func fetchSpecificMember(memberId: String, completed: @escaping (JSON?) -> ()) {
+    func fetchSpecificMember(memberId: String, completed: @escaping (Data?) -> ()) {
         propublicaServiceAPI.getSpecificMember(memberID: memberId) { (jsonFromClient) in
             completed(jsonFromClient)
         }

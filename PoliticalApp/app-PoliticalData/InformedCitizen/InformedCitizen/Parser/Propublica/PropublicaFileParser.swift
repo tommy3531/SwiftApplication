@@ -15,6 +15,11 @@ class PropublicaFileParser {
     var legislator = List<PropublicaModel>()
     var propublicaArray = [PropublicaModel]()
     
+    var propublicaSpecificMember: PropublicaSpecificMember!
+    var propublicaSpecificMemberArray = [PropublicaSpecificMember]()
+    var propublicaSpecificMemberArray2 = [PropublicaSpecificMember]()
+
+    
     func parseSenate(json: JSON, completed: @escaping ([PropublicaModel]) -> ()) {
 
         
@@ -86,8 +91,47 @@ class PropublicaFileParser {
         }
     }
     
-    func parseSpecificMember(json: JSON, completed: @escaping ([PropublicaSpecificMember]) -> ()) {
-        print(json)
+    func parseSpecificMember(data: Data, completed: @escaping ([PropublicaSpecificMember]) -> ()) {
+        print(JSON(data))
+        do {
+            let decoder = JSONDecoder()
+            let root = try decoder.decode(PropublicaSpecificMember.self, from: data)
+//            print(root)
+            completed([root])
+
+        } catch {
+            print("error")
+        }
+        
+    
+            
+//        if json["status"] == "OK" {
+//            status = json["status"].stringValue
+//            let propublicaSpecificMemberArray = json["results"]
+////            print("Next level is Result Array")
+//            for result in json["results"].arrayValue {
+////                print("Inside Result Array: \(result)")
+//                let voteSmart = result["votesmart_id"].stringValue
+//                let cSpan = result["cspan_id"].stringValue
+//                for role in result["roles"].arrayValue {
+////                    print("Inside Roles Array: \(role)")
+//                    let state = role["state"].stringValue
+//                    let state_rank = role["state_rank"].stringValue
+//
+//                    for committee in role["committees"].arrayValue {
+////                        print("Insdie Committees Array: \(committee)")
+//                    }
+//                    propublicaSpecificMember = PropublicaSpecificMember(status: status, results: propublicaSpecificMemberArray)
+//                    propublicaSpecificMemberArray2.append(propublicaSpecificMember)
+//
+//                }
+//
+//            }
+//            completed(propublicaSpecificMemberArray2)
+//
+//        } else {
+//            print("SOmething went wrong")
+//        }
     }
 
 }

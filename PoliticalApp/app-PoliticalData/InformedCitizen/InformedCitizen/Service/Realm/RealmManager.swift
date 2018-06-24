@@ -32,9 +32,8 @@ struct RealmManager {
     // call PropublicaManager function
     func loadSpecificMember() {
         propublicamanager.getSpecificMember(memberId: memberId) { (propublicaSpecificMember) in
-            for member in propublicaSpecificMember {
-                print(member)
-            }
+            print("Realm Manager")
+            print(propublicaSpecificMember)
         }
     }
     

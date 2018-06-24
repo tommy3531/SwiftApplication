@@ -30,7 +30,7 @@ struct PropublicaServiceAPI {
             case .failure(let response):
 
                 // TODO: Need to handle the response
-                print(response)
+                //print(response)
                 return
             }
         }
@@ -38,7 +38,7 @@ struct PropublicaServiceAPI {
     
     // https://api.propublica.org/congress/v1/members/{member-id}.json
     // This get a a specific members from congress based from their memberID
-    func getSpecificMember(memberID: String, completed: @escaping (JSON?) -> ()) {
+    func getSpecificMember(memberID: String, completed: @escaping (Data?) -> ()) {
         
         // Build Request
         let networking = Networking(baseURL: "https://api.propublica.org/congress/v1/members/\(memberID).json")
@@ -47,12 +47,12 @@ struct PropublicaServiceAPI {
             switch result {
             case .success(let response):
                 let data = response.data
-                let json = JSON(data)
-                completed(json)
+//                let json = JSON(data)
+                completed(data)
             case .failure(let response):
                 
                 // TODO: Need to handle the response
-                print(response)
+//                print(response)
                 return
             }
         }
@@ -73,7 +73,7 @@ struct PropublicaServiceAPI {
             case .failure(let response):
                 
                 // TODO: Need to handle the response
-                print(response)
+                //print(response)
                 return
             }
         }
