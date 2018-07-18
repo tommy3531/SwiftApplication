@@ -28,7 +28,7 @@ import RealmSwift
 
     dynamic var votesmart_id: String = ""
     dynamic var cspan_id: String = ""
-//    var roles: [Role] = []
+    var roles = List<Role>()
 //    var crp_id: String?
 //    var icpsr_id: String?
 //    var facebook_account: String?
@@ -42,7 +42,7 @@ import RealmSwift
     enum ResultKeys: String, CodingKey {
         case votesmart_id
         case cspan_id
-//        case roles
+        case roles
 //        case crp_id
 //        case icpsr_id
 //        case facebook_account
@@ -51,15 +51,19 @@ import RealmSwift
     }
 }
 
-struct Role {
-    var state: String?
-    var state_rank: String?
-    var committees: [Committee]
+@objcMembers final class Role: Object {
+    dynamic var state: String?
+    dynamic var state_rank: String?
+//    var committees: [Committee]
+    
+    override public static func primaryKey() -> String? {
+        return "state"
+    }
 
     enum RoleKeys: String, CodingKey {
         case state
         case state_rank
-        case committees
+//        case committees
     }
     
     struct Committee {
@@ -92,7 +96,7 @@ extension Result: Decodable {
         let resultContainer = try decoder.container(keyedBy: ResultKeys.self)
         self.votesmart_id = (try resultContainer.decodeIfPresent(String.self, forKey: .votesmart_id))!
         self.cspan_id = (try resultContainer.decodeIfPresent(String.self, forKey: .cspan_id))!
-//        roles = try resultContainer.decode([Role].self, forKey: .roles)
+        let roles = try resultContainer.decode([Role].self, forKey: .roles)
 //        icpsr_id = try resultContainer.decodeIfPresent(String.self, forKey: .icpsr_id)
 //        facebook_account = try resultContainer.decodeIfPresent(String.self, forKey: .facebook_account)
 //        youtube_account = try resultContainer.decodeIfPresent(String.self, forKey: .youtube_account)
@@ -100,15 +104,21 @@ extension Result: Decodable {
     }
 }
 //
-//extension Role: Decodable {
-//    init(from decoder: Decoder) throws {
-//        let roleContainer = try decoder.container(keyedBy: RoleKeys.self)
-//        state = try roleContainer.decode(String.self, forKey: .state)
-//        state_rank = try roleContainer.decode(String.self, forKey: .state_rank)
+extension Role: Decodable {
+    convenience init(state: String, rank: String){
+        self.init()
+        self.state = state
+        self.state_rank = rank
+    }
+    convenience init(from decoder: Decoder) throws {
+        self.init()
+        let roleContainer = try decoder.container(keyedBy: RoleKeys.self)
+        self.state = (try roleContainer.decode(String.self, forKey: .state))
+        self.state_rank = (try roleContainer.decode(String.self, forKey: .state_rank))
 //        committees = try roleContainer.decodeIfPresent([Committee].self, forKey: .committees) as! [Role.Committee]
-//
-//    }
-//}
+
+    }
+}
 //
 //extension Role.Committee: Decodable {
 //    init(from decoder: Decoder) throws {
